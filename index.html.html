@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="helpr.css">
+
+    <!-- icon -->
+
+    <link rel = "icon" href = 
+    "./public/asset/img/logo.png"  
+            type = "image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- google font -->
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- fontawsome -->
+
+
+    <!-- owl slider -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <!-- owl slider -->
+    <title>YTH</title>
+</head>
+
+<body>
+    <div class="hero-section">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+            <a class="navbar-brand" href="#"><img src="./public/asset/img/logo.png" width="60px" height="60px"
+                    alt=""></a>
+            <button id="btn" onclick="toggleHide()" class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#realestate">Real Estate News</a>
+                    </li>
+
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+
+                    <button class="btn btn-outline-success my-2 my-sm-0 mr-2 text-white" type="submit">Register as
+                        vendor</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit"> <i
+                            class="fas fa-mobile-alt mr-2"></i>Get app</button>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <div id="para" class="search-box">
+
+            <h1>Let us help </i></h1>
+
+            <div class="searchbar">
+                <select name="Your City" selected id="">
+                    <option value="" selected> Select City</option>
+
+                    <option value="">Campbell</option>
+                    <option value="">Cupertino</option>
+                    <option value="">Gilroy</option>
+                    <option value="">Loas Altos</option>
+                    <option value="">Los Altos Hills</option>
+                    <option value="">Los Gatos</option>
+                    <option value="">Militas</option>
+                    <option value="">Monte Sereno</option>
+                    <option value="">Morgan Hill</option>
+                    <option value="">Mountain View</option>
+                    <option value="">San Jose</option>
+                    <option value="">Los Gatos</option>
+                    <option value="">Santa Clara</option>
+                    <option value="">Saratoga</option>
+                    <option value="">Sunnyvale</option>
+                </select>
+                <input type="text" id="search-bar" placeholder="Search">
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- service section -->
+
+
+    <section class="portfolio" id="Portfolio">
+        <div class="container">
+
+            <div class="service-title">
+                <div class="row">
+                    <div class="section-title text-left">
+                        <h1>Services</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="filter-buttons ">
+                        <ul id="filter-btns">
+                            <li class="active" data-target="all"> <img src="./public/asset/img/service icons/select.png"
+                                    width="50px" height="50px" alt=""> <br> ALL SERVICES</li>
+                            <li data-target="home"> <img src="./public/asset/img/service icons/house-repair.png"
+                                    width="50px" height="50px" alt=""> <br> hOME REPAIR SERVICES</li>
+                            <li data-target="other home"><img src="./public/asset/img/service icons/home.png"
+                                    width="50px" height="50px" alt=""> <br> OTHER HOME SERVICES</li>
+                            <li data-target="photography"> <img src="./public/asset/img/service icons/camera.png"
+                                    width="50px" height="50px" alt=""> <br> PHOTOGRAPHY</li>
+                            <li data-target="lending"> <img src="./public/asset/img/service icons/lending.png"
+                                    width="50px" height="50px" alt=""> <br> LENDING & ESCROW</li>
+                            <li data-target="termite"> <img src="./public/asset/img/service icons/termite.png"
+                                    width="50px" height="50px" alt=""> <br> TERMITE INSPECTION</li>
+                            <li onclick="location.href='#realestate'" data-target="Fashion"> <img src="./public/asset/img/service icons/real.png" width="50px"
+                                    height="50px" alt=""> <br> <a >REAL ESTATE NEWS</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="portfolio-gallery">
+
+                    <!-- hOME REPAIR SERVICES -->
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/maintenance.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Ac Service & Repair <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/rug.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Carpet & Installation <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/tile.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Ceramic Tile <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/parquet.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Flooring <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/car-repair.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Garage Contractors <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/kitchen.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Kitchen Design & cabinets <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/gardening.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Landscaping & Gardening <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/painter.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Painters <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/swimming-pool.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Pool <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/washer.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Power Washing Systems <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/roof.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Roofing <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/swing.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Tree <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/home and repair/window.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Window & Door <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- hOME REPAIR SERVICES -->
+
+                    <!-- other homeERVICES -->
+
+                    <div class="item" data-id="other home">
+                        <div class="inner">
+                            <img src="./public/asset/img/helper/bedbug.png" width="70px" height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>365 staging inc. <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-id="other home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/other home services/room.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Home Decoration & Design <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-id="other home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/other home services/house-cleaning.png"
+                                width="70px" height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>House Cleaning <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-id="other home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/other home services/home-insurance.png"
+                                width="70px" height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Insurance <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="other home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/other home services/key-lock.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Locksmith <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="other home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/other home services/delivery-car.png"
+                                width="70px" height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Packing & Moving<br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-id="other home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/other home services/organization.png"
+                                width="70px" height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Organization Solutions <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-id="other home">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/other home services/home-automation.png"
+                                width="70px" height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Smart Home Automation systems <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- other homeERVICES -->
+
+                    <!-- photography -->
+
+                    <div class="item" data-id="photography">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/photography/camera.png" width="70px"
+                                height="70px" alt="portfolio">
+
+                            <div class="inner-text">
+                                <h4>Photography<br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="photography">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/photography/videography.png" width="70px"
+                                height="70px" alt="portfolio">
+                            <div class="inner-text">
+                                <h4>videography <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- photography -->
+
+
+                    <!-- lending -->
+
+                    <div class="item" data-id="lending">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/lending/writing.png" width="70px" height="70px"
+                                alt="portfolio">
+                            <div class="inner-text">
+                                <h4>Express Document <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-id="lending">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/lending/loan.png" width="70px" height="70px"
+                                alt="portfolio">
+                            <div class="inner-text">
+                                <h4>Home Equity Loan <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-id="lending">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/lending/mortgage-loan.png" width="70px"
+                                height="70px" alt="portfolio">
+                            <div class="inner-text">
+                                <h4>Mortgages <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-id="lending">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/lending/contract.png" width="70px" height="70px"
+                                alt="portfolio">
+                            <div class="inner-text">
+                                <h4>Private Lenders <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- lending -->
+
+
+                    <!-- termite -->
+
+
+                    <div class="item" data-id="termite">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/termite/inspection.png" width="70px"
+                                height="70px" alt="portfolio">
+                            <div class="inner-text">
+                                <h4>Property Inspection <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item" data-id="termite">
+                        <div class="inner">
+                            <img src="./public/asset/img/service icons/termite/insect.png" width="70px" height="70px"
+                                alt="portfolio">
+                            <div class="inner-text">
+                                <h4>Wall 2 Wall Property Inspection <br>
+                                    <span>Service</span>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- termite -->
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- service section ends-->
+    <hr>
+
+
+
+    <!-- recomended sections -->
+
+
+
+    <div class="recomended">
+        <div class="rec-title">
+            <h1> Recomended Services</h1>
+        </div>
+
+
+        <div id="slider" class="owl-carousel owl-theme">
+
+            <div class="item"><img src="./public/asset/img/service icons/home and repair/car-repair.png" width="300px" alt="">
+            <div class="text"><h4>Car Repair </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/home and repair/gardening.png" alt=""><div class="text"><h4>Car Repair <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/lending/loan.png" alt=""><div class="text"><h4>Home Equity Loan <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/lending/mortgage-loan.png" alt=""><div class="text"><h4>Mortgages <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/photography/camera.png" alt=""><div class="text"><h4>Photography </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/other home services/home-automation.png" alt=""><div class="text"><h4>Home Automation <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/other home services/house-cleaning.png" alt=""><div class="text"><h4>Cleaning <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/other home services/organization.png" alt=""><div class="text"><h4>Organization <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/termite/inspection.png" alt=""><div class="text"><h4>Car Repair <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/home and repair/painter.png" alt=""><div class="text"><h4>Painter <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/home and repair/roof.png" alt=""><div class="text"><h4>Roofing <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/home and repair/swimming-pool.png" alt=""><div class="text"><h4>Car Repair </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/home and repair/tile.png" alt=""><div class="text"><h4>Tile <br>service </h4></div></div>
+            <div class="item"><img src="./public/asset/img/service icons/home and repair/washer.png" alt=""><div class="text"><h4>Power washing <br>service </h4></div></div>
+
+
+
+        </div>
+    </div>
+
+    <!-- recomended sections -->
+
+
+    <hr>
+
+    <!-- offer slider -->
+
+    <div class="offer">
+        <div class="offer-title">
+            <h1> Best Offers</h1>
+        </div>
+        <section id="labels">
+            <div class="container">
+            <div class="row">
+                  <div class="col-sm-6 col-md-3">
+                    <div class="dl">
+                      <div class="brand">
+                          <h2>mango</h2>
+                      </div>
+                      <div class="discount alizarin">30%
+                          <div class="type">off</div>
+                      </div>
+                      <div class="descr">
+                          <strong>Mei mucius gloriatur reprimique mollis*.</strong> 
+                          Ad sonet perfecto antiopam mei, denique molestie ne has. 
+                      </div>
+                      <div class="ends">
+                          <small>* Conditions and restrictions apply.</small>
+                      </div>
+                      <div class="coupon midnight-blue">
+                          <a data-toggle="collapse" href="#code-1" class="open-code">Get a code</a>
+                          <div id="code-1" class="collapse code">LV5MAY14</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div  class="dl">
+                      <div class="brand">
+                          <h2>lacoste</h2>
+                      </div>
+                      <div class="discount emerald">
+                          50%
+                          <div class="type">
+                              off
+                          </div>
+                      </div>
+                      <div class="descr">
+                          <strong>
+                              Ea per iuvaret ocurreret*. 
+                          </strong> 
+                          sit ea detraxit menandri mediocritatem, in mel dicant mentitum. 
+                      </div>
+                      <div class="ends">
+                          <small>
+                             * Conditions and restrictions apply.
+                          </small>
+                      </div>
+                      <div class="coupon midnight-blue">
+                          <a data-toggle="collapse" href="#code-2" class="open-code">Get a code</a>
+                          <div id="code-2" class="collapse in code">
+                              MNO123ST
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div  class="dl">
+                      <div class="brand">
+                          <h2>
+                              converse
+                          </h2>
+                      </div>
+                      <div class="discount peter-river">
+                      15%
+                          <div class="type">
+                              off
+                          </div>
+                      </div>
+                      <div class="descr">
+                          <strong>
+                               Solet consul tractatos ei pro*. 
+                          </strong> 
+                          Ei mei quot invidunt explicari, placerat percipitur intellegam.
+                      </div>
+                      <div class="ends">
+                          <small>
+                             * Conditions and restrictions apply.
+                          </small>
+                      </div>
+                      <div class="coupon midnight-blue">
+                          <a data-toggle="collapse" href="#code-3" class="open-code">Get a code</a>
+                          <div id="code-3" class="collapse code">
+                              OLV4SY3R
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div  class="dl">
+                      <div class="brand">
+                          <h2>
+                              adidas
+                          </h2>
+                      </div>
+                      <div class="discount amethyst">
+                          25%
+                          <div class="type">
+                              off
+                          </div>
+                      </div>
+                      <div class="descr">
+                          <strong>
+                              Cu aliquip persius alterum duo*. 
+                          </strong> 
+                          Possit equidem disputando usu et, sea invidunt scriptorem in. 
+                      </div>
+                      <div class="ends">
+                          <small>
+                             * Conditions and restrictions apply.
+                          </small>
+                      </div>
+                      <div class="coupon midnight-blue">
+                          <a data-toggle="collapse" href="#code-4" class="open-code">Get a code</a>
+                          <div id="code-4" class="collapse code">
+                              ZUY4OPLQ
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+          </section>
+    </div>
+
+    <!-- offer slider -->
+    <hr>
+
+    <!-- media info -->
+
+    <div class="information" id="realestate">
+
+        <div class="sliders-title">
+            <h1>Home Related News & Tips</h1>
+        </div>
+        <div  class="media-info">
+
+        
+            <div class="media-img">
+                <img src="" alt="">
+            </div>
+    
+            <div class="marquee-table">
+    
+                <!-- <h1> Home Related News & Tips</h1> -->
+    
+                <marquee direction="up" scrollamount="7" onMouseOver="this.stop()" onMouseOut="this.start()">
+                    <div class="tagline">
+                        <a href=""> dolor sit amet consectetur adipisicing elit. Aperiam, harum?</a>
+                    </div>
+    
+                    <div class="tagline">
+                        <a href=""> dolor sit amet consectetur adipisicing elit. Aperiam, harum?</a>
+                    </div>
+    
+                    <div class="tagline">
+                        <a href=""> dolor sit amet consectetur adipisicing elit. Aperiam, harum?</a>
+                    </div>
+    
+                    <div class="tagline">
+                        <a href="">dolor sit amet consectetur adipisicing elit. Aperiam, harum?</a>
+                    </div>
+    
+                    <div class="tagline">
+                        <a href=""> dolor sit amet consectetur adipisicing elit. Aperiam, harum?</a>
+                    </div>
+    
+                    <div class="tagline">
+                        <a href="">dolor sit amet consectetur adipisicing elit. Aperiam, harum?</a>
+                    </div>
+    
+                </marquee>
+            </div>
+    
+        </div>
+
+    </div>
+
+   
+    <!-- media info -->
+
+
+
+    <!-- vedio slider -->
+    <div  class="video-slider">
+        <marquee class="video" behavior="" direction="left" scrollamount="7" onMouseOver="this.stop()"
+            onMouseOut="this.start()">
+
+            <video autoplay="false" loop="" controls="" width="300" height="200">
+                <source type="video/mp4"
+                    src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
+            </video>
+
+            <video autoplay="false" loop="" controls="" width="300" height="200">
+                <source type="video/mp4"
+                    src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
+            </video>
+
+            <video autoplay="false" loop="" controls="" width="300" height="200">
+                <source type="video/mp4"
+                    src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
+            </video>
+
+            <video autoplay="false" loop="" controls="" width="300" height="200">
+                <source type="video/mp4"
+                    src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
+            </video>
+
+            <video autoplay="false" loop="" controls="" width="300" height="200">
+                <source type="video/mp4"
+                    src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
+            </video>
+        </marquee>
+    </div>
+
+
+    <!-- vedio slider -->
+
+    <!-- why chose us -->
+    <!-- <div class="chose-us">
+        <h1 class="chose-title">Why Choose Us</h1>
+        <div class="chose-items">
+            <div class="chose-item">
+                <img src="./public/asset/img/helper/himg2.png" width="60" height="60" alt="">
+                <div class="chose-item-text">
+                    <h3>WINNER</h3>
+                    <p>Best Startup Award</p>
+
+                </div>
+            </div>
+
+            <div class="chose-item">
+                <img src="./public/asset/img/helper/himg3.png" width="60" height="60" alt="">
+                <div class="chose-item-text">
+                    <h3>30,000+</h3>
+                    <p>Satisfied homes</p>
+
+                </div>
+            </div>
+
+            <div class="chose-item">
+                <img src="./public/asset/img/helper/himg4.png" width="60" height="60" alt="">
+                <div class="chose-item-text">
+                    <h3>23,000+</h3>
+                    <p>In-house Professionals</p>
+
+                </div>
+            </div>
+
+            <div class="chose-item">
+                <img src="./public/asset/img/helper/himg4.png" width="60" height="60" alt="">
+                <div class="chose-item-text">
+                    <h3>VERIFIED</h3>
+                    <p>& background checked</p>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div> -->
+
+
+    <!-- why chose us -->
+
+
+
+    <!-- testimonial -->
+
+
+    <div class="gtco-testimonials">
+        <h2>Client Testimonial</h2>
+        <div class="owl-carousel owl-carousel1 owl-theme">
+            <div>
+                <div class="card text-center"><img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300"
+                        alt="">
+                    <div class="card-body">
+                        <h5>Ronne Galle <br />
+                            <span> Project Manager </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            ” </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301"
+                        alt="">
+                    <div class="card-body">
+                        <h5>Missy Limana<br />
+                            <span> Engineer </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            ” </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302"
+                        alt="">
+                    <div class="card-body">
+                        <h5>Martha Brown<br />
+                            <span> Project Manager </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            ” </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303"
+                        alt="">
+                    <div class="card-body">
+                        <h5>Hanna Lisem<br />
+                            <span> Project Manager </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            ” </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- testimonial -->
+
+
+
+    <!-- footer -->
+
+
+
+
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="rowf">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <img src="./public/asset/img/logo.png" width="100px" height="100px" alt="">
+                            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-linkedin"></a>
+                                <a href="#" class="fab fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18"> Service City</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Campbell</a></li>
+                                <li><a href="#">cupertino</a></li>
+                                <li><a href="#">Gilroy</a></li>
+                                <li><a href="#">Los Altos</a></li>
+                                <li><a href="#">Los Altos hills</a></li>
+                                <li><a href="#">Los Gatos</a></li>
+                                <li><a href="#">Milpitas</a></li>
+                                <li><a href="#">Monte Sereno</a></li>
+                                <li><a href="#">Morgan Hill</a></li>
+                                <li><a href="#">Mountain View</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Services</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Home Repair Services</a></li>
+                                <li><a href="#">Lending & Escrow</a></li>
+                                <li><a href="#">Other Home Services</a></li>
+                                <li><a href="#">Photography & Videography Services</a></li>
+                                <li><a href="#">Property & Termite Inspection</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Company</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Term & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">© All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-5 text-right">
+                        <p>Made with <i class="icon_heart"></i> in <a href="#"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- footer -->
+
+
+
+    <!-- service section script -->
+
+
+    <script>
+
+        const filterButtons = document.querySelector("#filter-btns").children;
+        const items = document.querySelector(".portfolio-gallery").children;
+
+        for (let i = 0; i < filterButtons.length; i++) {
+            filterButtons[i].addEventListener("click", function () {
+                for (let j = 0; j < filterButtons.length; j++) {
+                    filterButtons[j].classList.remove("active")
+                }
+                this.classList.add("active");
+                const target = this.getAttribute("data-target")
+
+                for (let k = 0; k < items.length; k++) {
+                    items[k].style.display = "none";
+                    if (target == items[k].getAttribute("data-id")) {
+                        items[k].style.display = "block";
+                    }
+                    if (target == "all") {
+                        items[k].style.display = "block";
+                    }
+                }
+
+            })
+        }
+    </script>
+
+    <!-- service section script -->
+
+    <!-- recomended services scripts -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            nav: false,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+
+                700: {
+                    items: 3
+                },
+
+                800: {
+                    items: 4
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+
+    <!-- recomended services scripts -->
+
+    <!-- bootstrap -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+<script>
+
+function toggleHide(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para'); 
+        if(para.style.display != 'none'){
+        para.style.display = 'none';
+        }
+        else{
+        para.style.display = 'flex';
+        }
+    }
+
+ 
+</script>
+</body>
+
+</html>
